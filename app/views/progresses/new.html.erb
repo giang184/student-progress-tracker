@@ -1,0 +1,6 @@
+<%= content_for(:title, "#{@student.student_name} | Add DIBELS score") %>
+<h1>Add a new DIBELS score for <%=@student.student_name %>:</h1>
+
+<p><%= link_to 'Return to Student Page', student_path(@student) %></p>
+
+<%= render :partial => "/progresses/edit_progress", :locals => {:student => @student}  %>

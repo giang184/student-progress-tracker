@@ -1,0 +1,10 @@
+<%= content_for(:title, "#{@student.student_name} | Edit DIBELS score") %>
+<h1><%="Edit #{@student.student_name}'s DIBELS progress score" %></h1>
+
+<p><%= link_to 'Return to Student Page', student_path(@student) %></p>
+
+<%= render :partial => "/progresses/edit_progress", :locals => {:student => @student}  %>
+<span class="btn btn-danger"><%= link_to "Delete Progress Score", student_progress_path(@progress),
+                :data => {:confirm => "You sure?",
+                          :method => "delete"} %></span></td>
+        
