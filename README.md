@@ -105,6 +105,9 @@ A web application designed to track student scores on various tests over their t
 ## Running the Application
 - To run the site on your local machine in the terminal run `rails s`
 - Open your browser and navigate to `localhost:3000` (default configuration)
+- To visit our live link, go to https://student-progress-trackers.herokuapp.com/
+- You can use the admin account (username: admin@example.com, password: password) to look around
+- Please refrain from making too many permanent changes to our seeded data
 
 ## Adding admins via the rails console
 * To add an admin you must use the rails console with `rails console`
